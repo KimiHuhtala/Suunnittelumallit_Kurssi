@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Arvuuttaja {
 
-    public Memento joinGame() {
+    public Memento liityPeliin() {
         Random random = new Random();
         int randomNumber = random.nextInt(100) + 1;
         return new Memento(randomNumber);

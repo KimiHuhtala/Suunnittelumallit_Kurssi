@@ -5,7 +5,7 @@ public class Main {
         Arvuuttaja arvuuttaja = new Arvuuttaja();
 
         for(int i = 0; i < 5; i++) {
-            Person asiakas = new Person(arvuuttaja);
+            Henkilo asiakas = new Henkilo(arvuuttaja);
             new Thread(asiakas, "Arvuuttaja " + (i +1)).start();
         }
     }

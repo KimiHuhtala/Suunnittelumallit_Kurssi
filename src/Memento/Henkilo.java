@@ -2,14 +2,14 @@ package Memento;
 
 import java.util.Random;
 
-public class Person implements Runnable {
+public class Henkilo implements Runnable {
 
     private Arvuuttaja arvuuttaja;
     private Memento memento;
 
-    public Person(Arvuuttaja arvuuttaja) {
+    public Henkilo(Arvuuttaja arvuuttaja) {
         this.arvuuttaja = arvuuttaja;
-        this.memento = arvuuttaja.joinGame();
+        this.memento = arvuuttaja.liityPeliin();
     }
 
     @Override
